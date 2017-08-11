@@ -53,7 +53,7 @@
     "gulp-ng-html2js": "^0.2.2",
     "gulp-plumber": "^1.0.0",
     "gulp-rename": "^1.2.0",
-    "gulp-sass": "^2.3.2",
+    "gulp-sass": "^3.1.0",
     "gulp-uglify": "^1.2.0",
     "gulp-util": "^3.0.1",
     "gulp-webserver": "^0.9.1",
@@ -83,6 +83,7 @@
     "prom": "git pull --rebase origin master",
     "current-branch": "git rev-parse --abbrev-ref HEAD",
     "merge-base": "git merge-base $(npm run -s current-branch) origin/master",
-    "squash": "git rebase -i $(npm run -s merge-base)"
+    "squash": "git rebase -i $(npm run -s merge-base)",
+    "dev": "gulp watch site --dev"
   }
 }
