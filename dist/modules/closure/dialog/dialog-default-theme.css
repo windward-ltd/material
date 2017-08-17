@@ -5,7 +5,7 @@
  * v1.1.4
  */
 md-dialog.md-THEME_NAME-theme {
-  border-radius: 4px;
+  border-radius: 0px;
   background-color: '{{background-hue-1}}';
   color: '{{foreground-1}}'; }
   md-dialog.md-THEME_NAME-theme.md-content-overflow .md-actions, md-dialog.md-THEME_NAME-theme.md-content-overflow md-dialog-actions {
