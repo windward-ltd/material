@@ -1,5 +1,6 @@
 // Standard/Desktop Heights
-$md-toolbar-height: $baseline-grid * 8 !default;
+// $md-toolbar-height: $baseline-grid * 8 !default;
+$md-toolbar-height: 50px !default;
 $md-toolbar-medium-tall-height: 88px !default;
 $md-toolbar-tall-height: 128px !default;
 
@@ -177,4 +178,3 @@ md-toolbar {
     max-height: $md-toolbar-height-mobile-landscape;
   }
 }
-

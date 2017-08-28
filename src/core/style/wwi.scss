@@ -1,0 +1,11 @@
+$toolbarBG: #D8D8D8;
+$buttonInToolbarColor: #979797;
+
+md-toolbar.md-wwi-theme {
+	background-color: $toolbarBG !important;
+}
+
+md-toolbar.md-wwi-theme md-icon {
+	color: $buttonInToolbarColor !important;
+	font-size: 26px !important
+}

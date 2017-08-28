@@ -21,7 +21,7 @@ module.exports = {
   ],
   themeBaseFiles: [
     'src/core/style/variables.scss',
-    'src/core/style/mixins.scss'
+    'src/core/style/mixins.scss',
   ],
   scssBaseFiles: [
     'src/core/style/color-palette.scss',
@@ -30,6 +30,7 @@ module.exports = {
     'src/core/style/structure.scss',
     'src/core/style/typography.scss',
     'src/core/style/layout.scss',
+		'src/core/style/wwi.scss',
 
     // TODO(crisbeto): can be removed once mdPanel is in the core.
     'src/components/panel/*.scss'
@@ -54,5 +55,3 @@ module.exports = {
   outputDir: 'dist/',
   demoFolder: 'demo-partials'
 };
-
-
