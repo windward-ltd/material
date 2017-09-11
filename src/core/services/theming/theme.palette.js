@@ -357,22 +357,84 @@ angular.module('material.core.theming.palette', [])
     'contrastStrongLightColors': '400 500 700'
   },
 	'ww-wwi': {
-    '50': '#000000',
-    '100': '#000000',
-    '200': '#000000',
-    '300': '#000000',
-    '400': '#000000',
-    '500': '#000000',
-    '600': '#000000',
-    '700': '#000000',
-    '800': '#000000',
-    '900': '#000000',
-    'A100': '#000000',
-    'A200': '#000000',
-    'A400': '#000000',
-    'A700': '#000000',
+		'50': '#eceff1',
+    '100': '#cfd8dc',
+    '200': '#b0bec5',
+    '300': '#90a4ae',
+    '400': '#78909c',
+    '500': '#009cc6', /* primary button */
+    '600': '#1AB6E0', /* primary button hover */
+    '700': '#455a64',
+    '800': '#37474f',
+    '900': '#263238',
+    'A100': '#cfd8dc',
+    'A200': '#b0bec5',
+    'A400': '#78909c',
+    'A700': '#455a64',
     'contrastDefaultColor': 'light',
     'contrastDarkColors': '50 100 200 300 A100 A200',
     'contrastStrongLightColors': '400 500 700'
-  }
+  },
+	'ww-wwi-warn': {
+		'50': '#fbe9e7',
+    '100': '#ffccbc',
+    '200': '#ffab91',
+    '300': '#ff8a65',
+    '400': '#ff7043',
+    '500': '#f55541', /* button */
+    '600': '#FF6F5B', /* button hover */
+    '700': '#e64a19',
+    '800': '#d84315',
+    '900': '#bf360c',
+    'A100': '#ff9e80',
+    'A200': '#ff6e40',
+    'A400': '#ff3d00',
+    'A700': '#dd2c00',
+    'contrastDefaultColor': 'light',
+    'contrastDarkColors': '50 100 200 300 400 A100 A200',
+    'contrastStrongLightColors': '500 600 700 800 900 A400 A700'
+  },
+	'ww-wwi-background': {
+		'50': '#fafafa',
+		'10': '#ffffff',
+    '20': '#494e58', /* reg. button bg */
+		'25': '#959595', /* disabled. button bg */
+		'26': '#e4e4e4', /* disabled. button color */
+		'30': '#636872', /* reg. button hover */
+		'40': '#009cc6', /* toast bg */
+    '100': '#f5f5f5',
+    '200': '#eeeeee',
+    '300': '#e0e0e0',
+    '400': '#bdbdbd',
+    '500': '#9e9e9e',
+    '600': '#757575',
+    '700': '#616161',
+    '800': '#424242',
+    '900': '#212121',
+    'A100': '#ffffff',
+    'A200': '#000000',
+    'A400': '#303030',
+    'A700': '#616161',
+    'contrastDefaultColor': 'dark',
+    'contrastLightColors': '600 700 800 900 A200 A400 A700'
+  },
+	// 'ww-wwi-accent': {
+	// 	'50': '#fbe9e7',
+  //   '100': '#ffccbc',
+  //   '200': '#ffab91',
+  //   '300': '#ff8a65',
+  //   '400': '#ff7043',
+  //   '500': '#959595', /* button */
+  //   '600': '#636872', /* button hover */
+  //   '700': '#e64a19',
+  //   '800': '#d84315',
+  //   '900': '#bf360c',
+  //   'A100': '#ff9e80',
+  //   'A200': '#ff6e40',
+  //   'A400': '#ff3d00',
+  //   'A700': '#dd2c00',
+  //   'contrastDefaultColor': 'light',
+  //   'contrastDarkColors': '50 100 200 300 400 A100 A200',
+  //   'contrastStrongLightColors': '500 600 700 800 900 A400 A700'
+  // }
 });

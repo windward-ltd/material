@@ -5,14 +5,20 @@ $button-border-radius: 0px !default;
 $button-fab-border-radius: 50% !default;
 $button-icon-border-radius: $button-fab-border-radius !default;
 
-$button-font-size: $body-font-size-base !default;
+// $button-font-size: $body-font-size-base !default;
+$button-font-size: 14px !default;
 $button-font-size-dense: $body-font-size-base * 13/14 !default;
 
-$button-line-height: rem(3.60) !default;
+// $button-line-height: rem(3.60) !default;
+$button-line-height: 30px !default;
 $button-line-height-dense: rem(3.20) !default;
 $button-margin: rem(0.600) rem(0.800) !default;
-$button-min-width: rem(8.800) !default;
+// $button-min-width: rem(8.800) !default;
 $button-padding: 0 $button-left-right-padding !default;
+
+$button-height: 30px !default;
+$button-min-height: 30px !default;
+$button-min-width: 145px !default;
 
 
 // Fab buttons
@@ -38,9 +44,11 @@ button.md-button::-moz-focus-inner {
   cursor: pointer;
 
   /** Alignment adjustments */
-  @include dense(min-height, $button-line-height, $button-line-height-dense);
+  // @include dense(min-height, $button-line-height, $button-line-height-dense);
+	min-height: $button-min-height;
   min-width: $button-min-width;
-  @include dense(line-height, $button-line-height, $button-line-height-dense);
+  // @include dense(line-height, $button-line-height, $button-line-height-dense);
+	line-height: $button-line-height;
 
   vertical-align: middle;
   align-items: center;
@@ -63,9 +71,11 @@ button.md-button::-moz-focus-inner {
   white-space: nowrap;
 
   /* Uppercase text content */
-  text-transform: uppercase;
+  // text-transform: uppercase;
+	text-transform: capitalize;
   font-weight: 500;
-  @include dense(font-size, $button-font-size, $button-font-size-dense);
+  // @include dense(font-size, $button-font-size, $button-font-size-dense);
+	font-size: $button-font-size;
   font-style: inherit;
   font-variant: inherit;
   font-family: inherit;
@@ -122,6 +132,10 @@ button.md-button::-moz-focus-inner {
       // The following hack causes Safari/Chrome to respect overflow hidden for ripples
       -webkit-mask-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC');
     }
+		.md-sidebar-icon-text {
+			font-size: 9px;
+			text-align: center;
+		}
   }
 
   &.md-fab {
@@ -168,10 +182,10 @@ button.md-button::-moz-focus-inner {
     &.md-raised,
     &.md-fab {
       &.md-focused {
-        @include md-shadow-bottom-z-1();
+        // @include md-shadow-bottom-z-1();
       }
       &:active {
-        @include md-shadow-bottom-z-2();
+        // @include md-shadow-bottom-z-2();
       }
     }
   }

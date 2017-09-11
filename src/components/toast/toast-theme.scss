@@ -1,11 +1,11 @@
 md-toast.md-THEME_NAME-theme {
 
   .md-toast-content {
-    background-color: #323232;
+    background-color: '{{background-40}}';
     color: '{{background-50}}';
 
     .md-button {
-      color: '{{background-50}}';
+      color: '{{background-10}}';
 
       &.md-highlight {
         // By default the toast should use the accent color as the primary highlight color

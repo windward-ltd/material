@@ -1,4 +1,4 @@
-$font-family: Roboto, 'Helvetica Neue', sans-serif !default;
+$font-family: 'Open Sans', sans-serif !default;
 $font-size:   10px !default;
 $display-4-font-size-base: rem(11.20) !default;
 $display-3-font-size-base: rem(5.600) !default;
@@ -93,6 +93,7 @@ $layout-breakpoint-md:     1280px !default;
 $layout-breakpoint-lg:     1920px !default;
 // Typography
 // ------------------------------
+// $font-family: Roboto, 'Helvetica Neue', sans-serif !default;
 
 //-- Must be defined before $font-size.
 @function rem($multiplier) {

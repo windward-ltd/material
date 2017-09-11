@@ -4,7 +4,7 @@
  * @license MIT
  * v1.1.4
  */
-$font-family: Roboto, 'Helvetica Neue', sans-serif !default;
+$font-family: 'Open Sans', sans-serif !default;
 $font-size:   10px !default;
 $display-4-font-size-base: rem(11.20) !default;
 $display-3-font-size-base: rem(5.600) !default;
@@ -93,6 +93,7 @@ $checkbox-border-radius: 2px !default;
 $checkbox-border-width: 2px !default;
 // Typography
 // ------------------------------
+// $font-family: Roboto, 'Helvetica Neue', sans-serif !default;
 
 //-- Must be defined before $font-size.
 @function rem($multiplier) {

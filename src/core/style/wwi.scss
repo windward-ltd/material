@@ -9,3 +9,16 @@ md-toolbar.md-wwi-theme md-icon {
 	color: $buttonInToolbarColor !important;
 	font-size: 26px !important
 }
+
+button.md-wwi-theme md-icon {
+	font-size: 24px !important
+}
+
+md-grid-list.md-wwi-theme {
+  md-grid-tile {
+    figure {
+      // align-items: start !important;
+      // justify-content: start !important;
+    }
+  }
+}

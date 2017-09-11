@@ -16,8 +16,10 @@ md-grid-list {
 
     figure {
       display: flex;
-      align-items: center;
-      justify-content: center;
+      // align-items: center;
+      // justify-content: center;
+			align-items: start;
+      justify-content: start;
       height: 100%;
       position: absolute;
       top: 0;
@@ -78,4 +80,3 @@ md-grid-list {
     border-top: 1px solid #fff;
   }
 }
-
