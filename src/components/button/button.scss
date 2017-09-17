@@ -136,6 +136,20 @@ button.md-button::-moz-focus-inner {
 			font-size: 9px;
 			text-align: center;
 		}
+		&.md-icon-button-sidebar {
+			height: auto !important;
+			width: 65px !important;
+			margin: 0 0 0 0 !important;
+			border-radius: 0 !important;
+			padding: 10px 0 10px 0;
+			letter-spacing: 0 !important;
+			span {
+				display: block;
+				font-size: 9px;
+				white-space: normal;
+				line-height: 12px;
+			}
+		}
   }
 
   &.md-fab {

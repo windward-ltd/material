@@ -357,6 +357,7 @@ angular.module('material.core.theming.palette', [])
     'contrastStrongLightColors': '400 500 700'
   },
 	'ww-wwi': {
+		'31': '#f5f5f5', /* sidebar button color */
 		'50': '#eceff1',
     '100': '#cfd8dc',
     '200': '#b0bec5',
@@ -395,12 +396,15 @@ angular.module('material.core.theming.palette', [])
     'contrastStrongLightColors': '500 600 700 800 900 A400 A700'
   },
 	'ww-wwi-background': {
-		'50': '#fafafa',
+		'50': '#f5f5f5',
+		/*'50': '#e4e4e4',*/
 		'10': '#ffffff',
     '20': '#494e58', /* reg. button bg */
 		'25': '#959595', /* disabled. button bg */
 		'26': '#e4e4e4', /* disabled. button color */
 		'30': '#636872', /* reg. button hover */
+		'32': '#374755', /* sidebar icon button hover (background +10%)*/
+		'33': '#1D2D3B', /* sidebar icon button selected (background +20%) */
 		'40': '#009cc6', /* toast bg */
     '100': '#f5f5f5',
     '200': '#eeeeee',

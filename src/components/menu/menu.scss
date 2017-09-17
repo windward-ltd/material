@@ -111,6 +111,7 @@ md-menu-item {
     padding-left: 2*$baseline-grid;
     padding-right: 2*$baseline-grid;
     width:100%;
+
     md-icon {
       @include rtl(margin, auto 2*$baseline-grid auto 0,  auto 0 auto 2*$baseline-grid);
     }
@@ -127,6 +128,15 @@ md-menu-item {
     }
   }
 }
+
+md-menu-content {
+	md-menu {
+		button {
+			text-align: left !important;
+		}
+	}
+}
+
 
 md-toolbar {
   .md-menu {
@@ -157,4 +167,3 @@ md-toolbar {
     }
   }
 }
-

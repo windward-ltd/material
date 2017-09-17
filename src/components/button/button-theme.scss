@@ -10,6 +10,18 @@
     &.md-icon-button:hover {
       background-color: transparent;
     }
+		&.md-icon-button-sidebar {
+			color: '{{primary-31}}';
+			md-icon {
+				color: '{{primary-31}}';
+			}
+		}
+		&.md-icon-button-sidebar:hover {
+			background-color: '{{background-32}}';
+		}
+		&.md-icon-button-sidebar-selected {
+			background-color: '{{background-33}}' !important;
+		}
   }
 
   &.md-fab {
@@ -40,9 +52,11 @@
         }
         &:hover {
           background-color: '{{primary-600}}';
+					// background-color: lighten('{{primary-500}}', 10%);
         }
         &.md-focused {
           background-color: '{{primary-600}}';
+					// background-color: lighten('{{primary-500}}', 10%);
         }
       }
     }
