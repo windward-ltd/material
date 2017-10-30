@@ -1,5 +1,10 @@
 $toolbarBG: #50606E;
 $buttonInToolbarColor: #979797;
+$buttonInToolbarColorHover: #ffffff;
+
+figcaption {
+	width: 100%;
+}
 
 md-toolbar.md-wwi-theme {
 	background-color: $toolbarBG !important;
@@ -9,9 +14,16 @@ md-toolbar.md-wwi-theme {
 }
 
 md-toolbar.md-wwi-theme md-icon {
-	color: $buttonInToolbarColor !important;
-	font-size: 26px !important
+	// color: $buttonInToolbarColor !important;
+	// font-size: 26px !important;
+	// &:hover {
+	// 	color: $buttonInToolbarColorHover !important;
+	// }
 }
+
+// .md-toolbar-tools md-button:hover {
+// 	color: $buttonInToolbarColorHover !important;
+// }
 
 button.md-wwi-theme md-icon {
 	font-size: 24px !important

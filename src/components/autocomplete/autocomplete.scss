@@ -1,12 +1,13 @@
 // The default item height is also specified in the JavaScript.
 $md-autocomplete-item-height: 48px !default;
-$md-autocomplete-clear-size: 30px !default;
+$md-autocomplete-clear-size: 18px !default;
 $md-autocomplete-input-offset: 20px !default;
+$md-autocomplete-height: 25px !default;
 
 md-autocomplete {
   border-radius: 2px;
   display: block;
-  height: 34px;
+  height: $md-autocomplete-height;
   position: relative;
   overflow: visible;
   min-width: 190px;
@@ -36,6 +37,12 @@ md-autocomplete {
         top: $md-autocomplete-input-offset;
         width: $md-autocomplete-clear-size;
         height: $md-autocomplete-clear-size;
+				md-icon {
+					width: $md-autocomplete-clear-size;
+	        height: $md-autocomplete-clear-size;
+					min-width: $md-autocomplete-clear-size;
+	        min-height: $md-autocomplete-clear-size;
+				}
       }
 
       input {
@@ -54,7 +61,7 @@ md-autocomplete {
 
     position: relative;
     overflow: visible;
-    height: 34px;
+    height: $md-autocomplete-height;
     &.md-menu-showing {
       z-index: $z-index-backdrop + 1;
     }
@@ -64,6 +71,8 @@ md-autocomplete {
       flex: 1 1 0%;
       box-sizing: border-box;
       min-width : 0;
+			font-size: 12px !important;
+			height: 27px !important;
     }
 
     md-progress-linear {
@@ -149,6 +158,10 @@ md-autocomplete {
       top: 50%;
       left: 50%;
       transform: translate3d(-50%, -50%, 0) scale(0.9);
+			width: $md-autocomplete-clear-size;
+			height: $md-autocomplete-clear-size;
+			min-width: $md-autocomplete-clear-size;
+			min-height: $md-autocomplete-clear-size;
       path {
         stroke-width: 0;
       }

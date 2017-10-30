@@ -62,6 +62,7 @@ md-checkbox {
     vertical-align: middle;
     white-space: normal;
     user-select: text;
+		font-size: 12px;
 
     @include rtl(margin-left, $checkbox-text-margin + $checkbox-width, 0);
     @include rtl(margin-right, 0, $checkbox-text-margin + $checkbox-width);

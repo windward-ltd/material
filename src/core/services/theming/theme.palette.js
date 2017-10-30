@@ -357,9 +357,17 @@ angular.module('material.core.theming.palette', [])
     'contrastStrongLightColors': '400 500 700'
   },
 	'ww-wwi': {
+		'22': '#1d2431', /* main black */
 		'31': '#f5f5f5', /* sidebar button color */
+		'32': '#f5f5f5', /* top toolbar button color */
+		'33': '#c6ccd0', /* sidebar text color */
 		'50': '#eceff1',
+		'61': '#d2dbe1', /* sidenav background */
+		'62': '#c6cfd5', /* sidenav item hover */
+		'63': '#acb5bb', /* sidenav item active bg */
+		'64': '#8393a1', /* sidenav title text */
     '100': '#cfd8dc',
+		'101': '#ffffff', /* general purpose white */
     '200': '#b0bec5',
     '300': '#90a4ae',
     '400': '#78909c',
@@ -390,7 +398,7 @@ angular.module('material.core.theming.palette', [])
     'A100': '#ff9e80',
     'A200': '#ff6e40',
     'A400': '#ff3d00',
-    'A700': '#dd2c00',
+    'A700': '#F55541', /* error color */
     'contrastDefaultColor': 'light',
     'contrastDarkColors': '50 100 200 300 400 A100 A200',
     'contrastStrongLightColors': '500 600 700 800 900 A400 A700'
@@ -411,6 +419,7 @@ angular.module('material.core.theming.palette', [])
     '300': '#e0e0e0',
     '400': '#bdbdbd',
     '500': '#9e9e9e',
+		'501': '#c6cfd5', /* sidenav item hover */
     '600': '#757575',
     '700': '#616161',
     '800': '#424242',
@@ -422,23 +431,4 @@ angular.module('material.core.theming.palette', [])
     'contrastDefaultColor': 'dark',
     'contrastLightColors': '600 700 800 900 A200 A400 A700'
   },
-	// 'ww-wwi-accent': {
-	// 	'50': '#fbe9e7',
-  //   '100': '#ffccbc',
-  //   '200': '#ffab91',
-  //   '300': '#ff8a65',
-  //   '400': '#ff7043',
-  //   '500': '#959595', /* button */
-  //   '600': '#636872', /* button hover */
-  //   '700': '#e64a19',
-  //   '800': '#d84315',
-  //   '900': '#bf360c',
-  //   'A100': '#ff9e80',
-  //   'A200': '#ff6e40',
-  //   'A400': '#ff3d00',
-  //   'A700': '#dd2c00',
-  //   'contrastDefaultColor': 'light',
-  //   'contrastDarkColors': '50 100 200 300 400 A100 A200',
-  //   'contrastStrongLightColors': '500 600 700 800 900 A400 A700'
-  // }
 });

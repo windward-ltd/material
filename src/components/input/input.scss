@@ -8,12 +8,13 @@ $input-label-float-width: $input-container-padding + 16px !default;
 
 $input-placeholder-offset: $input-label-default-offset !default;
 
-$input-border-width-default: 1px !default;
+// $input-border-width-default: 1px !default;
+$input-border-width-default: 0px !default;
 $input-border-width-focused: 2px !default;
-$input-line-height: 26px !default;
+$input-line-height: 21px !default; // was 25px
 $input-padding-top: 2px !default;
 
-$input-error-font-size: 12px !default;
+$input-error-font-size: 10px !default;
 $input-error-height: 24px !default;
 $input-error-line-height: $input-error-font-size + 2px !default;
 $error-padding-top: ($input-error-height - $input-error-line-height) / 2 !default;
@@ -26,12 +27,20 @@ $icon-float-focused-top: -8px !default;
 
 $input-resize-handle-height: 10px !default;
 
+.md-form-title {
+	font-size: 14px;
+	border-bottom: 1px solid #000;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 0 20px 0;
+}
+
 md-input-container {
   @include pie-clearfix();
   display: inline-block;
   position: relative;
   padding: $input-container-padding;
-  margin: 18px 0;
+  margin: 0 0 16px 0;
   vertical-align: middle;
 
   &.md-block {
@@ -99,7 +108,8 @@ md-input-container {
 
   label:not(.md-container-ignore) {
     position: absolute;
-    bottom: 100%;
+    // bottom: 100%;
+		bottom: 109%;
     @include rtl(left, 0, auto);
     @include rtl(right, auto, 0);
 
@@ -119,7 +129,7 @@ md-input-container {
     order: 1;
     pointer-events: none;
     -webkit-font-smoothing: antialiased;
-    @include rtl(padding-left, $input-container-padding + 1px, 0);
+    @include rtl(padding-left, $input-container-padding + 9px, 0);
     @include rtl(padding-right, 0, $input-container-padding + 1px);
     z-index: 1;
     transform: translate3d(0, $input-label-default-offset + 4, 0) scale($input-label-default-scale);
@@ -173,9 +183,11 @@ md-input-container {
     background: none;
     padding-top: $input-padding-top;
     padding-bottom: $input-border-width-focused - $input-border-width-default;
-    padding-left: 2px;
+    // padding-left: 2px;
+		padding-left: 8px;
     padding-right: 2px;
     border-width: 0 0 $input-border-width-default 0;
+		box-shadow: -1px 1px 0px 0 rgba(0, 0, 0, 0.2), inset -1px 1px 0 0 rgba(255, 255, 255, 0.8);
     line-height: $input-line-height;
     height: $input-line-height + ($input-padding-top * 2);
     -ms-flex-preferred-size: $input-line-height; //IE fix
@@ -196,7 +208,7 @@ md-input-container {
     }
     &:invalid {
       outline: none;
-      box-shadow: none;
+      // box-shadow: none;
     }
 
     &.md-no-flex {
@@ -234,7 +246,9 @@ md-input-container {
 
     // Add some top padding which is equal to half the difference between the expected height
     // and the actual height
-    padding-top: $error-padding-top;
+    // padding-top: $error-padding-top;
+		padding-top: 2px;
+		padding-left: 8px !important;
 
     &:not(.md-char-counter) {
       // Add some padding so that the messages don't touch the character counter

@@ -8,6 +8,9 @@ $select-container-transition-duration: 350ms !default;
 
 $select-max-visible-options: 5 !default;
 
+// $select-base-font-size: 14px !default;
+$select-base-font-size: 12px !default;
+
 // Fixes the animations with the floating label when select is inside an input container
 md-input-container {
   &:not([md-no-float]) {
@@ -165,15 +168,16 @@ md-input-container.md-input-has-value .md-select-value {
   display: flex;
   align-items: center;
   padding: 2px 2px 1px;
-  border-bottom-width: 1px;
+  // border-bottom-width: 1px;
+	border-bottom-width: 0px;
   border-bottom-style: solid;
-  background-color: rgba(0,0,0,0);
+  // background-color: rgba(0,0,0,0);
   position: relative;
   box-sizing: content-box;
   min-width: 8 * $baseline-grid;
-  min-height: 26px;
+  min-height: 22px;
   flex-grow: 1;
-
+	box-shadow: -1px 1px 0px 0 rgba(0, 0, 0, 0.2), inset -1px 1px 0 0 rgba(255, 255, 255, 0.8);
 
   > span:not(.md-select-icon) {
     max-width: 100%;
@@ -181,9 +185,12 @@ md-input-container.md-input-has-value .md-select-value {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-
+		font-size: $select-base-font-size;
+		padding-left: 6px;
+		margin-top: -4px;
     .md-text {
       display: inline;
+			// font-size: 14px;
     }
   }
 
@@ -273,6 +280,7 @@ md-option {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+		font-size: $select-base-font-size;
   }
   padding: 0 $select-option-padding 0 $select-option-padding;
   height: $select-option-height;

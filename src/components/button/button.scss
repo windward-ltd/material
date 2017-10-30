@@ -5,8 +5,8 @@ $button-border-radius: 0px !default;
 $button-fab-border-radius: 50% !default;
 $button-icon-border-radius: $button-fab-border-radius !default;
 
-// $button-font-size: $body-font-size-base !default;
-$button-font-size: 14px !default;
+$button-font-size: $body-font-size-base !default;
+// $button-font-size: 14px !default;
 $button-font-size-dense: $body-font-size-base * 13/14 !default;
 
 // $button-line-height: rem(3.60) !default;
@@ -67,7 +67,7 @@ button.md-button::-moz-focus-inner {
   margin: $button-margin;
 
   background: transparent;
-  color: currentColor;
+  // color: currentColor;
   white-space: nowrap;
 
   /* Uppercase text content */
@@ -150,6 +150,15 @@ button.md-button::-moz-focus-inner {
 				line-height: 12px;
 			}
 		}
+		md-icon {
+			font-size: 26px;
+			// color: '{{primary-32}}' !important;
+		}
+		// &:hover {
+		// 	md-icon {
+		// 		color: #ffffff;
+		// 	}
+		// }
   }
 
   &.md-fab {
