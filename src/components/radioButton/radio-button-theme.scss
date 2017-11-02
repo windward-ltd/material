@@ -8,7 +8,7 @@ md-radio-button.md-THEME_NAME-theme {
     background-color: '{{accent-color-0.87}}';
   }
   &.md-checked .md-off {
-    border-color: '{{accent-color-0.87}}';
+    // border-color: '{{accent-color-0.87}}';
   }
   &.md-checked .md-ink-ripple {
     color: '{{accent-color-0.87}}';
@@ -25,12 +25,13 @@ md-radio-button.md-THEME_NAME-theme {
     .md-primary,
     &.md-primary {
       .md-on {
-        background-color: '{{primary-color-0.87}}';
+        // background-color: '{{primary-color-0.87}}';
+				background-color: '{{primary-22-0.87}}';
       }
       .md-checked,
       &.md-checked {
         .md-off {
-          border-color: '{{primary-color-0.87}}';
+          // border-color: '{{primary-color-0.87}}';
         }
       }
       .md-checked,

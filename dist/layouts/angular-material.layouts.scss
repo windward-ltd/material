@@ -448,7 +448,8 @@ $checkbox-border-width: 1px !default;
   }
 
   &#{$checkedSelector} .md-icon {
-    background-color: '{{primary-color-0.87}}';
+    // background-color: '{{primary-color-0.87}}';
+		border-color: '{{primary-22}}';
   }
 
   &#{$checkedSelector}.md-focused .md-container:before {
@@ -456,7 +457,8 @@ $checkbox-border-width: 1px !default;
   }
 
   &#{$checkedSelector} .md-icon:after {
-    border-color: '{{primary-contrast-0.87}}';
+    // border-color: '{{primary-color-0.87}}';
+		border-color: '{{primary-22}}';
   }
 
   & .md-indeterminate[disabled] {

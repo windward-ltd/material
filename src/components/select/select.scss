@@ -1,8 +1,10 @@
 $select-checkbox-border-radius: 2px !default;
 $select-checkbox-border-width: 2px !default;
 $select-checkbox-width: rem(1.4) !default;
-$select-option-height: 48px !default;
-$select-option-padding: 16px !default;
+// $select-option-height: 48px !default;
+$select-option-height: 32px !default;
+// $select-option-padding: 16px !default;
+$select-option-padding: 8px !default;
 $select-container-padding: 16px !default;
 $select-container-transition-duration: 350ms !default;
 
@@ -233,8 +235,10 @@ md-select-menu {
 
   &:not(.md-overflow) {
     md-content {
-      padding-top: $baseline-grid;
-      padding-bottom: $baseline-grid;
+      // padding-top: $baseline-grid;
+			padding-top: 0;
+      // padding-bottom: $baseline-grid;
+			padding-bottom: 0;
     }
   }
 

@@ -442,7 +442,8 @@ $checkbox-border-width: 1px !default;
   }
 
   &#{$checkedSelector} .md-icon {
-    background-color: '{{primary-color-0.87}}';
+    // background-color: '{{primary-color-0.87}}';
+		border-color: '{{primary-22}}';
   }
 
   &#{$checkedSelector}.md-focused .md-container:before {
@@ -450,7 +451,8 @@ $checkbox-border-width: 1px !default;
   }
 
   &#{$checkedSelector} .md-icon:after {
-    border-color: '{{primary-contrast-0.87}}';
+    // border-color: '{{primary-color-0.87}}';
+		border-color: '{{primary-22}}';
   }
 
   & .md-indeterminate[disabled] {
@@ -667,7 +669,8 @@ input {
 
 @media (min-width: $layout-breakpoint-sm) {
   .md-padding {
-    padding: 16px;
+    // padding: 16px;
+		padding: 8px;
   }
 }
 
@@ -687,7 +690,6 @@ bdo[dir=ltr] {
   direction: ltr;
   unicode-bidi: bidi-override;
 }
-
 
 // Global page styles
 //
@@ -1232,7 +1234,7 @@ label {
     @include layout-for-name($name);
 }
 
-$toolbarBG: #50606E;
+$toolbarBG: #374755;
 $buttonInToolbarColor: #979797;
 $buttonInToolbarColorHover: #ffffff;
 
@@ -2419,6 +2421,7 @@ md-checkbox {
     @include rtl(margin-left, $checkbox-text-margin + $checkbox-width, 0);
     @include rtl(margin-right, 0, $checkbox-text-margin + $checkbox-width);
 
+		margin-top: -3px;
   }
 }
 
@@ -3699,7 +3702,8 @@ md-input-container {
   display: inline-block;
   position: relative;
   padding: $input-container-padding;
-  margin: 0 0 16px 0;
+  // margin: 0 16px 16px 0;
+	margin: 0 16px 8px 0;
   vertical-align: middle;
 
   &.md-block {
@@ -4071,7 +4075,8 @@ $list-header-line-height: 1.2em !default;
 $list-p-margin: 0 0 0 0 !default;
 $list-p-line-height: 1.6em !default;
 
-$list-padding-top: $baseline-grid !default;
+// $list-padding-top: $baseline-grid !default;
+$list-padding-top: 0px !default;
 $list-padding-right: 0px !default;
 $list-padding-left: 0px !default;
 $list-padding-bottom: $baseline-grid !default;
@@ -4488,7 +4493,8 @@ md-list-item {
 
 $menu-border-radius: 2px !default;
 $max-visible-items: 6 !default;
-$menu-item-height: 6 * $baseline-grid !default;
+// $menu-item-height: 6 * $baseline-grid !default;
+$menu-item-height: 4 * $baseline-grid !default;
 $dense-menu-item-height: 4 * $baseline-grid !default;
 $max-menu-height: 2 * $baseline-grid + $max-visible-items * $menu-item-height !default;
 $max-dense-menu-height: 2 * $baseline-grid + $max-visible-items * $dense-menu-item-height !default;
@@ -4504,8 +4510,10 @@ $max-dense-menu-height: 2 * $baseline-grid + $max-visible-items * $dense-menu-it
   overflow: auto;
 
   md-menu-divider {
-    margin-top: $baseline-grid / 2;
-    margin-bottom: $baseline-grid / 2;
+    // margin-top: $baseline-grid / 2;
+    // margin-bottom: $baseline-grid / 2;
+		margin-top: 0;
+		margin-bottom: 0;
     height: 1px;
     min-height: 1px;
     max-height: 1px;
@@ -4544,7 +4552,8 @@ $max-dense-menu-height: 2 * $baseline-grid + $max-visible-items * $dense-menu-it
 md-menu-content {
   display: flex;
   flex-direction: column;
-  padding: $baseline-grid 0;
+  // padding: $baseline-grid 0;
+	padding: 0 0;
   max-height: $max-menu-height;
   overflow-y: auto;
   &.md-dense {
@@ -4592,12 +4601,13 @@ md-menu-item {
     display: inline-block;
     border-radius: 0;
     margin: auto 0;
-    font-size: (2*$baseline-grid) - 1;
+    // font-size: (2*$baseline-grid) - 1;
+		font-size: 12px;
     text-transform: none;
     font-weight: 400;
     height: 100%;
-    padding-left: 2*$baseline-grid;
-    padding-right: 2*$baseline-grid;
+    padding-left: 1*$baseline-grid;
+    padding-right: 1*$baseline-grid;
     width:100%;
 
     md-icon {
@@ -4621,6 +4631,13 @@ md-menu-content {
 	md-menu {
 		button {
 			text-align: left !important;
+			font-size: 12px !important;
+			padding-left: $baseline-grid !important;
+			padding-top: 1px !important;
+			padding-bottom: 1px !important;
+			margin-left: 0 !important;
+			margin-top: 0 !important;
+			margin-bottom: 0 !important;
 		}
 	}
 }
@@ -4754,6 +4771,81 @@ md-menu-content.md-menu-bar-menu.md-dense {
       }
     }
   }
+}
+
+/** Matches "md-tabs md-tabs-wrapper" style. */
+$md-nav-bar-height: 48px;
+
+.md-nav-bar {
+  border-style: solid;
+  border-width: 0 0 1px;
+  height: $md-nav-bar-height;
+  position: relative;
+}
+
+._md-nav-bar-list {
+  outline: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  // Layout [layout='row']
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+
+.md-nav-item:first-of-type {
+  margin-left: 8px;
+}
+
+// override button styles to look more like tabs
+.md-button._md-nav-button {
+  line-height: 24px;
+  margin: 0 4px;
+  padding: 12px 16px;
+  transition: background-color 0.35s $swift-ease-in-out-timing-function;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: inherit;
+  }
+}
+
+md-nav-ink-bar {
+  $duration: $swift-ease-in-out-duration * 0.5;
+  $multiplier: 0.5;
+  bottom: 0;
+  height: 2px;
+  left: auto;
+  position: absolute;
+  right: auto;
+  background-color: black;
+
+  &._md-left {
+    transition: left ($duration * $multiplier) $swift-ease-in-out-timing-function,
+        right $duration $swift-ease-in-out-timing-function;
+  }
+  &._md-right {
+    transition: left $duration $swift-ease-in-out-timing-function,
+        right ($duration * $multiplier) $swift-ease-in-out-timing-function;
+  }
+
+  // By default $ngAnimate looks for transition durations on the element, when using ng-hide, ng-if, ng-show.
+  // The ink bar has a transition duration applied, which means, that $ngAnimate delays the hide process.
+  // To avoid this, we need to reset the transition, when $ngAnimate looks for the duration.
+  &.ng-animate {
+    transition: none;
+  }
+
+}
+
+md-nav-extra-content {
+  min-height: 48px;
+  padding-right: 12px;
 }
 
 $progress-circular-indeterminate-duration: 1568.63ms !default;
@@ -5102,6 +5194,7 @@ md-radio-button {
 
     @include rtl(margin-left, $radio-text-margin + $radio-width, 0);
     @include rtl(margin-right, 0, $radio-text-margin + $radio-width);
+		margin-top: -2px;
 
     vertical-align: middle;
     white-space: normal;
@@ -5184,8 +5277,10 @@ md-radio-group {
 $select-checkbox-border-radius: 2px !default;
 $select-checkbox-border-width: 2px !default;
 $select-checkbox-width: rem(1.4) !default;
-$select-option-height: 48px !default;
-$select-option-padding: 16px !default;
+// $select-option-height: 48px !default;
+$select-option-height: 32px !default;
+// $select-option-padding: 16px !default;
+$select-option-padding: 8px !default;
 $select-container-padding: 16px !default;
 $select-container-transition-duration: 350ms !default;
 
@@ -5416,8 +5511,10 @@ md-select-menu {
 
   &:not(.md-overflow) {
     md-content {
-      padding-top: $baseline-grid;
-      padding-bottom: $baseline-grid;
+      // padding-top: $baseline-grid;
+			padding-top: 0;
+      // padding-bottom: $baseline-grid;
+			padding-bottom: 0;
     }
   }
 
@@ -7354,81 +7451,6 @@ $virtual-repeat-scrollbar-width: 16px !default;
   md-whiteframe, [md-whiteframe] {
     background-color: #ffffff;
   }
-}
-
-/** Matches "md-tabs md-tabs-wrapper" style. */
-$md-nav-bar-height: 48px;
-
-.md-nav-bar {
-  border-style: solid;
-  border-width: 0 0 1px;
-  height: $md-nav-bar-height;
-  position: relative;
-}
-
-._md-nav-bar-list {
-  outline: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  // Layout [layout='row']
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-}
-
-.md-nav-item:first-of-type {
-  margin-left: 8px;
-}
-
-// override button styles to look more like tabs
-.md-button._md-nav-button {
-  line-height: 24px;
-  margin: 0 4px;
-  padding: 12px 16px;
-  transition: background-color 0.35s $swift-ease-in-out-timing-function;
-
-  &:focus {
-    outline: none;
-  }
-
-  &:hover {
-    background-color: inherit;
-  }
-}
-
-md-nav-ink-bar {
-  $duration: $swift-ease-in-out-duration * 0.5;
-  $multiplier: 0.5;
-  bottom: 0;
-  height: 2px;
-  left: auto;
-  position: absolute;
-  right: auto;
-  background-color: black;
-
-  &._md-left {
-    transition: left ($duration * $multiplier) $swift-ease-in-out-timing-function,
-        right $duration $swift-ease-in-out-timing-function;
-  }
-  &._md-right {
-    transition: left $duration $swift-ease-in-out-timing-function,
-        right ($duration * $multiplier) $swift-ease-in-out-timing-function;
-  }
-
-  // By default $ngAnimate looks for transition durations on the element, when using ng-hide, ng-if, ng-show.
-  // The ink bar has a transition duration applied, which means, that $ngAnimate delays the hide process.
-  // To avoid this, we need to reset the transition, when $ngAnimate looks for the duration.
-  &.ng-animate {
-    transition: none;
-  }
-
-}
-
-md-nav-extra-content {
-  min-height: 48px;
-  padding-right: 12px;
 }
 
 /*

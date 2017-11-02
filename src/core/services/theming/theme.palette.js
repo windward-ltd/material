@@ -420,6 +420,7 @@ angular.module('material.core.theming.palette', [])
     '400': '#bdbdbd',
     '500': '#9e9e9e',
 		'501': '#c6cfd5', /* sidenav item hover */
+		'502': '#8393A1', /* sidenav title bg */
     '600': '#757575',
     '700': '#616161',
     '800': '#424242',

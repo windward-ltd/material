@@ -40,7 +40,8 @@ md-input-container {
   display: inline-block;
   position: relative;
   padding: $input-container-padding;
-  margin: 0 0 16px 0;
+  // margin: 0 16px 16px 0;
+	margin: 0 16px 8px 0;
   vertical-align: middle;
 
   &.md-block {

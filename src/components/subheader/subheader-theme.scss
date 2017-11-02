@@ -1,8 +1,11 @@
 .md-subheader.md-THEME_NAME-theme {
   // color: '{{ foreground-2-0.23 }}';
   // background-color: '{{background-default}}';
-	color: '{{ primary-64 }}';
-	background-color: 'transparent';
+
+	// color: '{{ primary-64 }}';
+	// background-color: 'transparent';
+	color: '{{ primary-22 }}';
+	background-color: '{{ background-502 }}';
 
 	&.md-leftnav {
 		height: 40px !important;
