@@ -146,9 +146,9 @@ md-select {
     }
     &:focus {
       .md-select-value {
-        border-bottom-width: 2px;
-        border-bottom-style: solid;
-        padding-bottom: 0;
+        // border-bottom-width: 2px;
+        // border-bottom-style: solid;
+        // padding-bottom: 0;
       }
       &.ng-invalid.ng-touched {
         .md-select-value {

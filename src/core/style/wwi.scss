@@ -1,39 +1,13 @@
-$toolbarBG: #374755;
-$buttonInToolbarColor: #979797;
-$buttonInToolbarColorHover: #ffffff;
-
-figcaption {
-	width: 100%;
-}
-
-md-toolbar.md-wwi-theme {
-	background-color: $toolbarBG !important;
-	-webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
-	-moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
-}
-
-md-toolbar.md-wwi-theme md-icon {
-	// color: $buttonInToolbarColor !important;
-	// font-size: 26px !important;
-	// &:hover {
-	// 	color: $buttonInToolbarColorHover !important;
-	// }
-}
-
-// .md-toolbar-tools md-button:hover {
-// 	color: $buttonInToolbarColorHover !important;
+// figcaption {
+// 	width: 100%;
 // }
-
-button.md-wwi-theme md-icon {
-	font-size: 24px !important
-}
-
-md-grid-list.md-wwi-theme {
-  md-grid-tile {
-    figure {
-      // align-items: start !important;
-      // justify-content: start !important;
-    }
-  }
-}
+//
+// md-toolbar.md-wwi-theme {
+// 	// -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+// 	// -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+// 	// box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+// }
+//
+// button.md-wwi-theme md-icon {
+// 	// font-size: 24px !important
+// }

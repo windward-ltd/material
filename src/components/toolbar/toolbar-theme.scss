@@ -1,10 +1,23 @@
 md-toolbar.md-THEME_NAME-theme:not(.md-menu-toolbar) {
-  background-color: '{{primary-color}}';
+  // background-color: '{{primary-color}}';
+	background-color: '{{background-31}}';
   color: '{{primary-contrast}}';
 
+	md-select-value {
+		span {
+			.md-text {
+				color: '{{primary-22}}';
+				display: block;
+				margin-top: 3px;
+			}
+		}
+	}
+
   md-icon {
-    color: '{{primary-contrast}}';
-    fill: '{{primary-contrast}}';
+    // color: '{{primary-contrast}}';
+    // fill: '{{primary-contrast}}';
+		color: '{{primary-31}}';
+    fill: '{{primary-31}}';
   }
 
   .md-button[disabled] md-icon {

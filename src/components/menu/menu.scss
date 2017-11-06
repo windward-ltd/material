@@ -118,7 +118,8 @@ md-menu-item {
     width:100%;
 
     md-icon {
-      @include rtl(margin, auto 2*$baseline-grid auto 0,  auto 0 auto 2*$baseline-grid);
+      // @include rtl(margin, auto 2*$baseline-grid auto 0,  auto 0 auto 2*$baseline-grid);
+			font-size: 18px;
     }
     p {
       display:inline-block;

@@ -25,6 +25,10 @@ md-toolbar {
   min-height: $md-toolbar-height;
   width: 100%;
 
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+
   &._md-toolbar-transitions {
     transition-duration: $swift-ease-in-out-duration;
     transition-timing-function: $swift-ease-in-out-timing-function;
@@ -122,6 +126,19 @@ md-toolbar {
   .md-button {
     margin-top: 0;
     margin-bottom: 0;
+		margin-left: 3px;
+		margin-right: 3px;
+
+		width: 36px;
+		height: 36px;
+
+		md-icon {
+			width: 26px;
+			height: 26px;
+			font-size: 24px;
+			margin-left: -3px;
+			margin-top: -2px;
+		}
 
     &, &.md-icon-button md-icon {
       transition-duration: $swift-ease-in-out-duration;

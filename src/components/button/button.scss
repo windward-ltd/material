@@ -5,9 +5,12 @@ $button-border-radius: 0px !default;
 $button-fab-border-radius: 50% !default;
 $button-icon-border-radius: $button-fab-border-radius !default;
 
-$button-font-size: $body-font-size-base !default;
-// $button-font-size: 14px !default;
-$button-font-size-dense: $body-font-size-base * 13/14 !default;
+// $button-font-size: $body-font-size-base !default;
+// $button-font-size: 24px !default;
+$button-font-size: 12px !default;
+// $button-font-size-dense: $body-font-size-base * 13/14 !default;
+// $button-font-size-dense: 24px !default;
+$button-font-size-dense: 12px !default;
 
 // $button-line-height: rem(3.60) !default;
 $button-line-height: 30px !default;

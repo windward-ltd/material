@@ -361,11 +361,13 @@ angular.module('material.core.theming.palette', [])
 		'31': '#f5f5f5', /* sidebar button color */
 		'32': '#f5f5f5', /* top toolbar button color */
 		'33': '#c6ccd0', /* sidebar text color */
+		'34': '#0083ad', /* top toolbar button color active */
 		'50': '#eceff1',
 		'61': '#d2dbe1', /* sidenav background */
 		'62': '#c6cfd5', /* sidenav item hover */
 		'63': '#acb5bb', /* sidenav item active bg */
 		'64': '#8393a1', /* sidenav title text */
+		'65': '#afafaf', /* sidenav title bg */
     '100': '#cfd8dc',
 		'101': '#ffffff', /* general purpose white */
     '200': '#b0bec5',
@@ -404,13 +406,14 @@ angular.module('material.core.theming.palette', [])
     'contrastStrongLightColors': '500 600 700 800 900 A400 A700'
   },
 	'ww-wwi-background': {
-		'50': '#f5f5f5',
+		'50': '#f5f5f5', /* general purpose white */
 		/*'50': '#e4e4e4',*/
 		'10': '#ffffff',
     '20': '#494e58', /* reg. button bg */
 		'25': '#959595', /* disabled. button bg */
 		'26': '#e4e4e4', /* disabled. button color */
 		'30': '#636872', /* reg. button hover */
+		'31': '#374755', /* top toolbar bg */
 		'32': '#374755', /* sidebar icon button hover (background +10%)*/
 		'33': '#1D2D3B', /* sidebar icon button selected (background +20%) */
 		'40': '#009cc6', /* toast bg */
@@ -420,7 +423,7 @@ angular.module('material.core.theming.palette', [])
     '400': '#bdbdbd',
     '500': '#9e9e9e',
 		'501': '#c6cfd5', /* sidenav item hover */
-		'502': '#8393A1', /* sidenav title bg */
+		'502': '#DFE8EE', /* sidenav title bg */
     '600': '#757575',
     '700': '#616161',
     '800': '#424242',
