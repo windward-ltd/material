@@ -603,6 +603,9 @@ function MdDialogProvider($$interimElementProvider) {
     });
 
   /* @ngInject */
+	/*
+'    <md-button ng-click="dialog.hide()" class="md-primary md-raised md-confirm-button" md-autofocus="dialog.$type===\'alert\'"' +
+	*/
   function advancedDialogOptions() {
     return {
       template: [
@@ -621,10 +624,10 @@ function MdDialogProvider($$interimElementProvider) {
         '  </md-dialog-content>',
         '  <md-dialog-actions>',
         '    <md-button ng-if="dialog.$type === \'confirm\' || dialog.$type === \'prompt\'"' +
-        '               ng-click="dialog.abort()" class="md-primary md-cancel-button">',
+        '               ng-click="dialog.abort()" class="md-raised md-cancel-button">',
         '      {{ dialog.cancel }}',
         '    </md-button>',
-        '    <md-button ng-click="dialog.hide()" class="md-primary md-confirm-button" md-autofocus="dialog.$type===\'alert\'"' +
+        '    <md-button ng-click="dialog.hide()" class="md-primary md-raised md-confirm-button" md-autofocus="dialog.$type===\'alert\'"' +
         '               ng-disabled="dialog.required && !dialog.result">',
         '      {{ dialog.ok }}',
         '    </md-button>',
@@ -676,7 +679,7 @@ function MdDialogProvider($$interimElementProvider) {
       onShow: onShow,
       onShowing: beforeShow,
       onRemove: onRemove,
-      clickOutsideToClose: false,
+      clickOutsideToClose: true,
       escapeToClose: true,
       targetEvent: null,
       closeTo: null,

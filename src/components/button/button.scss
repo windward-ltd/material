@@ -127,7 +127,8 @@ button.md-button::-moz-focus-inner {
     line-height: $icon-size;
     padding: $baseline-grid;
     width: $icon-button-width;
-    border-radius: $button-icon-border-radius;
+    // border-radius: $button-icon-border-radius;
+		border-radius: 2px;
     .md-ripple-container {
       border-radius: $button-icon-border-radius;
       background-clip: padding-box;

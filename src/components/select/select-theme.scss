@@ -140,9 +140,11 @@ md-select-menu.md-THEME_NAME-theme {
       }
 
       &[selected] {
-        color: '{{primary-500}}';
+        // color: '{{primary-500}}';
+				color: '{{primary-34}}';
         &:focus {
-          color: '{{primary-600}}';
+          // color: '{{primary-600}}';
+					color: '{{primary-34}}';
         }
         &.md-accent {
           color: '{{accent-color}}';
