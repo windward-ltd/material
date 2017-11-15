@@ -16,6 +16,13 @@ md-menu-content.md-THEME_NAME-theme {
       }
     }
 
+		.md-button {
+			color: '{{primary-22}}';
+			md-icon {
+				color: '{{primary-22}}';
+			}
+		}
+
   }
 
   md-menu-divider {
