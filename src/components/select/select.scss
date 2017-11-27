@@ -185,7 +185,8 @@ md-input-container.md-input-has-value .md-select-value {
     max-width: 100%;
     flex: 1 1 auto;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    // white-space: nowrap;
+		white-space: normal;
     overflow: hidden;
 		font-size: $select-base-font-size;
 		padding-left: 6px;
@@ -316,7 +317,8 @@ md-optgroup {
 
 md-select-menu[multiple] {
   md-option.md-checkbox-enabled {
-    @include rtl(padding-left, $select-option-padding * 2.5, $select-option-padding);
+    // @include rtl(padding-left, $select-option-padding * 2.5, $select-option-padding);
+		padding-left: 30px;
     @include rtl(padding-right, $select-option-padding, $select-option-padding * 2.5);
 
     @include checkbox-container('[selected]');
@@ -326,4 +328,29 @@ md-select-menu[multiple] {
       @include rtl(margin-right, auto, $select-option-padding * (2 / 3));
     }
   }
+}
+
+.md-select-with-search {
+
+	.md-select-with-search-header {
+		padding-left: 8px;
+		height: 34px;
+		cursor: pointer;
+		position: relative;
+		display: flex;
+		align-items: center;
+		width: auto;
+
+		.md-select-with-search-input {
+			border: none;
+			outline: none;
+			height: 100%;
+			width: 100%;
+			padding: 0;
+		}
+	}
+
+	md-content._md {
+		max-height: 240px;
+	}
 }

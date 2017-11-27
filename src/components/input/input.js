@@ -319,6 +319,14 @@ function inputTextareaDirective($mdUtil, $window, $mdAria, $timeout, $mdGesture)
     var mdNoAsterisk = $mdUtil.parseAttributeBoolean(attr.mdNoAsterisk);
     var tagName = element[0].tagName.toLowerCase();
 
+    // a fix to support search inside of a select
+    // source: https://material.angularjs.org/latest/demo/select
+    if (attr.class && attr.class.indexOf('md-select-with-search-input') !== -1) {
+      element
+        .on('keydown', function(ev) {
+          ev.stopPropagation();
+        })
+    }
 
     if (!containerCtrl) return;
     if (attr.type === 'hidden') {
