@@ -14,16 +14,6 @@
     &.md-icon-button:hover {
       background-color: transparent;
     }
-		&.md-icon-button {
-			md-icon {
-				color: '{{primary-32}}' !important;
-			}
-			&:hover {
-				md-icon {
-					color: #ffffff;
-				}
-			}
-		}
 		&.md-icon-button-sidebar {
 			color: '{{primary-31}}';
 			md-icon {
