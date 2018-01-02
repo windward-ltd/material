@@ -356,7 +356,7 @@ angular.module('material.core.theming.palette', [])
     'contrastDarkColors': '50 100 200 300 A100 A200',
     'contrastStrongLightColors': '400 500 700'
   },
-	'ww-wwi': {
+	'ww_wwi': {
 		'22': '#1d2431', /* main black */
 		'31': '#f5f5f5', /* sidebar button color */
 		'32': '#f5f5f5', /* top toolbar button color */
@@ -386,7 +386,7 @@ angular.module('material.core.theming.palette', [])
     'contrastDarkColors': '50 100 200 300 A100 A200',
     'contrastStrongLightColors': '400 500 700'
   },
-	'ww-wwi-warn': {
+	'ww_wwi_warn': {
 		'50': '#fbe9e7',
     '100': '#ffccbc',
     '200': '#ffab91',
@@ -405,7 +405,7 @@ angular.module('material.core.theming.palette', [])
     'contrastDarkColors': '50 100 200 300 400 A100 A200',
     'contrastStrongLightColors': '500 600 700 800 900 A400 A700'
   },
-	'ww-wwi-background': {
+	'ww_wwi_background': {
 		'50': '#f5f5f5', /* general purpose white */
 		/*'50': '#e4e4e4',*/
 		'10': '#ffffff',
