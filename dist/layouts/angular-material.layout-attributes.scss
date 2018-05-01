@@ -85,6 +85,7 @@ $checkbox-width: 20px !default;
 $checkbox-height: $checkbox-width !default;
 $checkbox-border-radius: 0px !default;
 $checkbox-border-width: 1px !default;
+$box-shadow: 0px 29px 65px -4px rgba(0,0,0,0.17);
 $baseline-grid:            8px !default;
 $layout-gutter-width:      ($baseline-grid * 2) !default;
 $layout-breakpoint-xs:     600px !default;
@@ -141,6 +142,8 @@ $layout-breakpoint-lg:     1920px !default;
 // Shared Checkbox variables
 // $checkbox-border-radius: 2px !default;
 // $checkbox-border-width: 2px !default;
+
+// Shared box shadow
 
 @mixin margin-selectors($before:1em, $after:1em, $start:0px, $end:0px) {
   -webkit-margin-before: $before;

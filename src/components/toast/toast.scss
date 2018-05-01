@@ -39,7 +39,7 @@ md-toast {
 
     padding: 0 $md-toast-content-padding;
 
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    box-shadow: $box-shadow;
     border-radius: 2px;
     font-size: 14px;
 

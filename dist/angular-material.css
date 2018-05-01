@@ -2,7 +2,7 @@
  * AngularJS Material Design
  * https://github.com/angular/material
  * @license MIT
- * v1.1.5
+ * v1.1.501
  */
 html, body {
   height: 100%;
@@ -2206,23 +2206,6 @@ md-fab-toolbar {
     -webkit-transform: scale(1);
             transform: scale(1); }
 
-md-icon {
-  margin: auto;
-  background-repeat: no-repeat no-repeat;
-  display: inline-block;
-  vertical-align: middle;
-  fill: currentColor;
-  height: 24px;
-  width: 24px;
-  min-height: 24px;
-  min-width: 24px; }
-  md-icon svg {
-    pointer-events: none;
-    display: block; }
-  md-icon[md-font-icon] {
-    line-height: 24px;
-    width: auto; }
-
 md-grid-list {
   box-sizing: border-box;
   display: block;
@@ -2297,6 +2280,23 @@ md-grid-list {
 
 figcaption {
   width: 100%; }
+
+md-icon {
+  margin: auto;
+  background-repeat: no-repeat no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  fill: currentColor;
+  height: 24px;
+  width: 24px;
+  min-height: 24px;
+  min-width: 24px; }
+  md-icon svg {
+    pointer-events: none;
+    display: block; }
+  md-icon[md-font-icon] {
+    line-height: 24px;
+    width: auto; }
 
 .md-form-title {
   font-size: 14px;
@@ -2613,162 +2613,6 @@ md-input-container {
 @media screen and (-ms-high-contrast: active) {
   md-input-container.md-default-theme > md-icon {
     fill: #fff; } }
-
-.md-open-menu-container {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 100;
-  opacity: 0;
-  border-radius: 0px;
-  max-height: calc(100vh - 10px);
-  overflow: auto; }
-  .md-open-menu-container md-menu-divider {
-    margin-top: 0;
-    margin-bottom: 0;
-    height: 1px;
-    min-height: 1px;
-    max-height: 1px;
-    width: 100%; }
-  .md-open-menu-container md-menu-content > * {
-    opacity: 0; }
-  .md-open-menu-container:not(.md-clickable) {
-    pointer-events: none; }
-  .md-open-menu-container.md-active {
-    opacity: 1;
-    -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-    -webkit-transition-duration: 200ms;
-            transition-duration: 200ms; }
-    .md-open-menu-container.md-active > md-menu-content > * {
-      opacity: 1;
-      -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
-      transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
-      -webkit-transition-duration: 200ms;
-              transition-duration: 200ms;
-      -webkit-transition-delay: 100ms;
-              transition-delay: 100ms; }
-  .md-open-menu-container.md-leave {
-    opacity: 0;
-    -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
-    transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms; }
-
-md-menu-content {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
-  padding: 0 0;
-  max-height: 208px;
-  overflow-y: auto; }
-  md-menu-content.md-dense {
-    max-height: 208px; }
-    md-menu-content.md-dense md-menu-item {
-      height: 32px;
-      min-height: 0px; }
-
-md-menu-item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-          flex-direction: row;
-  min-height: 32px;
-  height: 32px;
-  -webkit-align-content: center;
-          align-content: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-          justify-content: flex-start;
-  /*
-   * We cannot use flex on <button> elements due to a bug in Firefox, so we also can't use it on
-   * <a> elements. Add some top padding to fix alignment since buttons automatically align their
-   * text vertically.
-   */ }
-  md-menu-item > * {
-    width: 100%;
-    margin: auto 0;
-    padding-left: 16px;
-    padding-right: 16px; }
-  md-menu-item > a.md-button {
-    padding-top: 5px; }
-  md-menu-item > .md-button {
-    text-align: left;
-    display: inline-block;
-    border-radius: 0;
-    margin: auto 0;
-    font-size: 12px;
-    text-transform: none;
-    font-weight: 400;
-    height: 100%;
-    padding-left: 8px;
-    padding-right: 8px;
-    width: 100%; }
-    md-menu-item > .md-button::-moz-focus-inner {
-      padding: 0;
-      border: 0; }
-    [dir=rtl] md-menu-item > .md-button {
-      text-align: right; }
-    md-menu-item > .md-button md-icon {
-      font-size: 18px; }
-    md-menu-item > .md-button p {
-      display: inline-block;
-      margin: auto; }
-    md-menu-item > .md-button span {
-      margin-top: auto;
-      margin-bottom: auto; }
-    md-menu-item > .md-button .md-ripple-container {
-      border-radius: inherit; }
-
-md-menu-content md-menu button {
-  text-align: left !important;
-  font-size: 12px !important;
-  padding-left: 8px !important;
-  padding-top: 1px !important;
-  padding-bottom: 1px !important;
-  margin-left: 0 !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important; }
-
-md-toolbar .md-menu {
-  height: auto;
-  margin: auto;
-  padding: 0; }
-
-@media (max-width: 959px) {
-  md-menu-content {
-    min-width: 112px; }
-  md-menu-content[width="3"] {
-    min-width: 168px; }
-  md-menu-content[width="4"] {
-    min-width: 224px; }
-  md-menu-content[width="5"] {
-    min-width: 280px; }
-  md-menu-content[width="6"] {
-    min-width: 336px; }
-  md-menu-content[width="7"] {
-    min-width: 392px; } }
-
-@media (min-width: 960px) {
-  md-menu-content {
-    min-width: 96px; }
-  md-menu-content[width="3"] {
-    min-width: 192px; }
-  md-menu-content[width="4"] {
-    min-width: 256px; }
-  md-menu-content[width="5"] {
-    min-width: 320px; }
-  md-menu-content[width="6"] {
-    min-width: 384px; }
-  md-menu-content[width="7"] {
-    min-width: 448px; } }
 
 md-list {
   display: block;
@@ -3165,6 +3009,162 @@ md-list-item {
     md-list-item.md-3-line > .md-avatar, md-list-item.md-3-line > .md-no-style > md-icon:first-child,
     md-list-item.md-3-line > .md-no-style > .md-avatar {
       margin-top: 16px; }
+
+.md-open-menu-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  opacity: 0;
+  border-radius: 0px;
+  max-height: calc(100vh - 10px);
+  overflow: auto; }
+  .md-open-menu-container md-menu-divider {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 1px;
+    min-height: 1px;
+    max-height: 1px;
+    width: 100%; }
+  .md-open-menu-container md-menu-content > * {
+    opacity: 0; }
+  .md-open-menu-container:not(.md-clickable) {
+    pointer-events: none; }
+  .md-open-menu-container.md-active {
+    opacity: 1;
+    -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -webkit-transition-duration: 200ms;
+            transition-duration: 200ms; }
+    .md-open-menu-container.md-active > md-menu-content > * {
+      opacity: 1;
+      -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+      transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+      -webkit-transition-duration: 200ms;
+              transition-duration: 200ms;
+      -webkit-transition-delay: 100ms;
+              transition-delay: 100ms; }
+  .md-open-menu-container.md-leave {
+    opacity: 0;
+    -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+    transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms; }
+
+md-menu-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  padding: 0 0;
+  max-height: 208px;
+  overflow-y: auto; }
+  md-menu-content.md-dense {
+    max-height: 208px; }
+    md-menu-content.md-dense md-menu-item {
+      height: 32px;
+      min-height: 0px; }
+
+md-menu-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  min-height: 32px;
+  height: 32px;
+  -webkit-align-content: center;
+          align-content: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  /*
+   * We cannot use flex on <button> elements due to a bug in Firefox, so we also can't use it on
+   * <a> elements. Add some top padding to fix alignment since buttons automatically align their
+   * text vertically.
+   */ }
+  md-menu-item > * {
+    width: 100%;
+    margin: auto 0;
+    padding-left: 16px;
+    padding-right: 16px; }
+  md-menu-item > a.md-button {
+    padding-top: 5px; }
+  md-menu-item > .md-button {
+    text-align: left;
+    display: inline-block;
+    border-radius: 0;
+    margin: auto 0;
+    font-size: 12px;
+    text-transform: none;
+    font-weight: 400;
+    height: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 100%; }
+    md-menu-item > .md-button::-moz-focus-inner {
+      padding: 0;
+      border: 0; }
+    [dir=rtl] md-menu-item > .md-button {
+      text-align: right; }
+    md-menu-item > .md-button md-icon {
+      font-size: 18px; }
+    md-menu-item > .md-button p {
+      display: inline-block;
+      margin: auto; }
+    md-menu-item > .md-button span {
+      margin-top: auto;
+      margin-bottom: auto; }
+    md-menu-item > .md-button .md-ripple-container {
+      border-radius: inherit; }
+
+md-menu-content md-menu button {
+  text-align: left !important;
+  font-size: 12px !important;
+  padding-left: 8px !important;
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important; }
+
+md-toolbar .md-menu {
+  height: auto;
+  margin: auto;
+  padding: 0; }
+
+@media (max-width: 959px) {
+  md-menu-content {
+    min-width: 112px; }
+  md-menu-content[width="3"] {
+    min-width: 168px; }
+  md-menu-content[width="4"] {
+    min-width: 224px; }
+  md-menu-content[width="5"] {
+    min-width: 280px; }
+  md-menu-content[width="6"] {
+    min-width: 336px; }
+  md-menu-content[width="7"] {
+    min-width: 392px; } }
+
+@media (min-width: 960px) {
+  md-menu-content {
+    min-width: 96px; }
+  md-menu-content[width="3"] {
+    min-width: 192px; }
+  md-menu-content[width="4"] {
+    min-width: 256px; }
+  md-menu-content[width="5"] {
+    min-width: 320px; }
+  md-menu-content[width="6"] {
+    min-width: 384px; }
+  md-menu-content[width="7"] {
+    min-width: 448px; } }
 
 md-toolbar.md-menu-toolbar h2.md-toolbar-tools {
   line-height: 1rem;
@@ -5214,7 +5214,7 @@ md-toast {
     max-width: 100%;
     min-height: 48px;
     padding: 0 18px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    box-shadow: 0px 29px 65px -4px rgba(0, 0, 0, 0.17);
     border-radius: 2px;
     font-size: 14px;
     overflow: hidden;
