@@ -2,7 +2,7 @@
  * AngularJS Material Design
  * https://github.com/angular/material
  * @license MIT
- * v1.1.5
+ * v1.1.501
  */
 $font-family: 'Open Sans', sans-serif !default;
 $font-size:   10px !default;
@@ -91,6 +91,7 @@ $checkbox-width: 20px !default;
 $checkbox-height: $checkbox-width !default;
 $checkbox-border-radius: 0px !default;
 $checkbox-border-width: 1px !default;
+$box-shadow: 0px 29px 65px -4px rgba(0,0,0,0.17);
 // Typography
 // ------------------------------
 // $font-family: Roboto, 'Helvetica Neue', sans-serif !default;
@@ -141,6 +142,8 @@ $checkbox-border-width: 1px !default;
 // Shared Checkbox variables
 // $checkbox-border-radius: 2px !default;
 // $checkbox-border-width: 2px !default;
+
+// Shared box shadow
 
 @mixin margin-selectors($before:1em, $after:1em, $start:0px, $end:0px) {
   -webkit-margin-before: $before;
