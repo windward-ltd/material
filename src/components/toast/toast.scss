@@ -4,11 +4,6 @@ $md-toast-content-padding: 3 * $baseline-grid - $button-left-right-padding !defa
 $md-toast-button-left-margin: 3 * $baseline-grid - 2 * $button-left-right-padding !default;
 $md-toast-text-padding: $button-left-right-padding !default;
 
-
-.md-toast-text {
-  padding: 0 $md-toast-text-padding;
-}
-
 md-toast {
   position: absolute;
   z-index: $z-index-toast;
@@ -170,7 +165,6 @@ md-toast {
 
 @media (min-width: $layout-breakpoint-sm) {
   md-toast {
-    min-width: 288px + $toast-margin * 2;
     &.md-bottom {
       bottom: 0;
     }
